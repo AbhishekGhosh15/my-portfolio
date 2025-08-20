@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="bg-[#0f172a] text-white py-16 px-8 flex justify-center border-t-2 border-black h-screen items-center">
+    <section className="bg-[#0f172a] text-white py-16 px-8 flex justify-center border-t-2 border-black h-screen items-center overflow-hidden">
       <div className="bg-gray-50 text-[#0f172a] rounded-2xl shadow-lg max-w-6xl w-full p-10 flex flex-col md:flex-row items-center gap-10 min-h-[75vh]">
         
         {/* Left Side - Image */}
@@ -15,12 +15,12 @@ const About = () => {
         </div>
 
         {/* Right Side - Text */}
-        <div className="w-full md:w-1/2 space-y-6 text-black text-center md:text-left">
+        <div className="w-full md:w-1/2 h-[50vh] md:h-[60vh] md:text-sm space-y-6 text-black text-center md:text-left">
           <h2 style={{ fontFamily: "Playfair Display" }} className="text-4xl font-bold">
             About
           </h2>
 
-          <div className="space-y-6">
+          <div className="space-y-6 text-xs md:text-sm">
             {/* Frontend */}
             <div>
               <h3 className="text-xl font-semibold flex items-center gap-2 justify-center md:justify-start">

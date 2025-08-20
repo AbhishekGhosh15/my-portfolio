@@ -3,7 +3,7 @@ import profile from "../assets/Developer boy.png"; // adjust path if needed
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between  h-[65vh] sm:h-[75vh] md:h-screen bg-gray-50 px-6 sm:px-12 md:px-40 overflow-hidden">
+    <section className="relative flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between  h-[70vh] sm:h-[75vh] md:h-screen bg-gray-50 px-6 sm:px-12 md:px-40 overflow-hidden">
       {/* Left Content */}
       <div className="z-10 text-center lg:text-left mt-10 lg:mt-0 max-w-xl">
         <p
