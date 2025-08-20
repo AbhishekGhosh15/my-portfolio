@@ -8,9 +8,9 @@ const About = () => {
         {/* Left Side - Image */}
         <div className="flex justify-center w-full md:w-1/2">
           <img
-            src="src/assets/53919.jpg"
+            src="https://img.freepik.com/premium-vector/cartoon-illustration-boy-running-with-kite-sky-flying-kite-customizable-cartoon-illustration_538213-128795.jpg?semt=ais_hybrid"
             alt="ABOUT"
-            className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 object-contain"
+            className="w-64 h-64 sm:w-72 sm:h-72 md:w-90 md:h-90 object-contain rounded-md"
           />
         </div>
 
