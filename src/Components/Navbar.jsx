@@ -28,7 +28,7 @@ const Navbar = () => {
       {/* Left Section */}
       <div className="flex gap-2 items-center">
         <img
-          src="src/assets/vecteezy_easy-to-use-hand-finger-3d-pixel-icon-unique-style-emoji_47424818.png"
+          src="https://cdn-icons-png.flaticon.com/128/281/281089.png"
           alt="Logo"
           className="h-[5vh] w-auto"
         />
