@@ -1,10 +1,21 @@
 import React from "react";
+import { Star } from "lucide-react";
 
 const About = () => {
+
+  const points = [
+    "Full Stack MERN Developer",
+    "2+ years of experience building web apps",
+    "Strong understanding of REST APIs",
+    "UI/UX enthusiast with a love for design",
+    "Proficient in Git, GitHub, and deployment",
+  ];
+
+
   return (
-    <section className="bg-[#0f172a] text-white py-16 px-8 flex justify-center border-t-2 border-black h-[120vh] md:h-screen items-center overflow-hidden">
-      <div className="bg-gray-50 text-[#0f172a] rounded-2xl shadow-lg max-w-6xl w-full p-2 md:p-10 flex flex-col md:flex-row items-center gap-10 h-[100vh] lg:h-[75vh]">
-        
+    <section className="bg-[#0f172a] text-white py-16 px-8 flex justify-center border-t-2 border-black h-[100vh] md:h-screen items-center overflow-hidden">
+      <div className="bg-gray-50 text-[#0f172a] rounded-2xl shadow-lg max-w-6xl w-full p-2 md:p-10 flex flex-col md:flex-row items-center md:gap-10 h-[85vh] lg:h-[75vh]">
+
         {/* Left Side - Image */}
         <div className="flex justify-center w-full md:w-1/2">
           <img
@@ -15,43 +26,35 @@ const About = () => {
         </div>
 
         {/* Right Side - Text */}
-        <div className="w-full md:w-1/2 h-[50vh] md:h-[60vh] md:text-sm space-y-6 text-black text-center md:text-left">
-          <h2 style={{ fontFamily: "Playfair Display" }} className="text-4xl font-bold">
-            About
-          </h2>
+        <div className="w-full md:w-1/2 h-[50vh] md:h-[60vh] md:text-sm space-y-6  text-black text-center md:text-left">
+          <section className="px-4 sm:px-6 md:px-12 lg:px-20 py-8">
+            <div className="max-w-3xl mx-auto">
+              {/* Heading */}
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-black bg-clip-text text-transparent mb-4 text-center md:text-left">
+                About Me
+              </h2>
 
-          <div className="space-y-6 text-xs md:text-sm">
-            {/* Frontend */}
-            <div>
-              <h3 className="text-xl font-semibold flex items-center gap-2 justify-center md:justify-start">
-                <span className="text-lg">➜</span> Frontend Developer
-              </h3>
-              <p className="text-[#0f172a] text-xs sm:text-sm">
-                "Hi, I’m Abhishek, a passionate Frontend Developer who loves crafting beautiful and functional web experiences. I specialize in React.js, JavaScript, and modern CSS frameworks like Tailwind CSS. My goal is to transform creative ideas into interactive, user-friendly websites that not only look great but also perform seamlessly. When I’m not coding, I enjoy exploring new design trends and improving my problem-solving skills."
+              {/* Paragraph */}
+              <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6 text-center md:text-left ">
+                I’m a creative and passionate <strong>Full Stack Developer</strong> focused on
+                building responsive, performant, and accessible web applications using the{" "}
+                <strong>MERN stack</strong>.
               </p>
-            </div>
 
-            {/* Backend */}
-            <div>
-              <h3 className="text-xl font-semibold flex items-center gap-2 justify-center md:justify-start">
-                <span className="text-lg">➜</span> Backend Developer
-              </h3>
-              <p className="text-[#0f172a] text-sm">
-                "I’m also a Backend Developer passionate about building the engine that powers modern web applications. I specialize in Node.js, Express, and databases like MongoDB & MySQL, focusing on creating secure, efficient, and scalable APIs. Outside of coding, I love exploring new technologies and improving system architecture designs."
-              </p>
+              {/* Points */}
+              <ul className="space-y-4">
+                {points.map((point, index) => (
+                  <li
+                    key={index}
+                    className="flex items-start gap-3 text-sm sm:text-base md:text-lg"
+                  >
+                    <Star className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-500 flex-shrink-0 mt-1" />
+                    <span className="text-gray-800">{point}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-
-            {/* Database */}
-            <div>
-              <h3 className="text-xl font-semibold flex items-center gap-2 justify-center md:justify-start">
-                <span className="text-lg">➜</span> Database Developer
-              </h3>
-              <p className="text-[#0f172a] text-sm">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Libero voluptas vel et!
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
       </div>
     </section>
